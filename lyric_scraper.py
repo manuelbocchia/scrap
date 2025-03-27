@@ -10,7 +10,10 @@ import json
 
 base_url = 'https://www.lyrics.com'
 
-alphabet = list(string.ascii_lowercase)
+# option a) whole alphabet
+#alphabet = list(string.ascii_lowercase)
+# option b) one artist
+alphabet = 'i'
 
 headers = {
     #'Accept':'*/*',
