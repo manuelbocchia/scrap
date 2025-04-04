@@ -10,7 +10,7 @@ import string
 import json
 
 ## Enter your ARTIST
-my_artist = 'Incomplete'
+my_artist = 'Queen'
 
 letter = my_artist[0].lower()
 

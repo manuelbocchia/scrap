@@ -13,7 +13,7 @@ base_url = 'https://www.lyrics.com'
 # option a) whole alphabet
 #alphabet = list(string.ascii_lowercase)
 # option b) one artist
-alphabet = 'i'
+alphabet = 'q'
 
 headers = {
     #'Accept':'*/*',

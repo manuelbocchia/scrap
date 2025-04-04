@@ -7,8 +7,12 @@ import pprint
 from collections import defaultdict
 import string
 import json
+import os
 ## --- OPEN FILE
-file_path = '/home/manuel/manu/scrap/Radiohead_lyrics.csv'
+artist = 'Queen'
+folder=f'LYRICS_{artist}'
+os.makedirs(folder,exist_ok=True)
+file_path = f'/home/manuel/manu/scrap/{artist}_lyrics.csv'
 ## --- SET DATAFRAME
 df_ori = pd.read_csv(file_path)
 
@@ -71,7 +75,7 @@ for x in number_songs:
             #pprint.pp(type(''.join(lyric_content.stripped_strings)))
             try:
                 my_song_str = ''.join(lyric_content.stripped_strings)
-                output_file = 'LYRICS/' + the_song[0] + '_LYRICS.txt'
+                output_file = f'LYRICS_{artist}/' + the_song[0] + '_LYRICS.txt'
 
                 with open(output_file, 'w') as file:
                     file.write(my_song_str)

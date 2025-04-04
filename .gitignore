@@ -177,3 +177,7 @@ cython_debug/
 # Content files
 *.csv
 *.jpeg
+
+# Folders for Lyrics
+
+LYRICS_*/
